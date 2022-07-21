@@ -1,0 +1,74 @@
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.menu-card-img {
+    width: 138px;
+    height: 198px;
+    overflow: hidden;
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--white-6);
+}
+
+.menu-card:not(.active):hover .menu-card-label {
+    background-color: var(--pink-light)
+}
+
+.voting {
+    background-color: var(--blue);
+}
+
+.menu-card:not(.active):hover .voting {
+    border-color:  var(--blue);
+}
+
+.breeds {
+    background-color: var(--green);
+}
+
+.menu-card:not(.active):hover .breeds {
+    border-color: var(--green);
+}
+
+.gallery {
+    background-color: var(--yellow);
+}
+
+.menu-card:not(.active):hover .gallery {
+    border-color: var(--yellow);
+}
+
+.active .menu-card-img {
+    border-color: var(--pink-light);
+}
+
+.active .menu-card-label {
+    background-color: var(--pink);
+    color: white;
+}
+
+
+.menu-card-img img {
+    width: 100%;
+}
+
+.menu-card-label {
+    width: 90%;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: var(--pink);
+    text-transform: uppercase;
+    background-color: white;
+    padding: 1em 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+

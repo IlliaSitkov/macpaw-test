@@ -1,0 +1,13 @@
+.work-pane {
+    padding: 20px;
+}
+
+.white {
+    min-height: 770px;
+    background-color: white;
+}
+
+.pink {
+    background-color:  var(--pink-light);
+    min-height: 840px;
+}

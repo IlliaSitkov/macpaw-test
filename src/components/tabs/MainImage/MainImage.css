@@ -1,0 +1,12 @@
+
+.main-image {
+    position: relative;
+}
+
+.main-image img {
+    top: -170px;
+    right: -40px;
+    position: absolute;
+}
+
+
