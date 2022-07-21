@@ -1,0 +1,17 @@
+
+.tab-label {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 4px 32px;
+    background-color: var(--pink-light);
+    color: var(--pink);
+    font-weight: 500;
+    text-align: center;
+}
+
+.active-tab-label {
+    background-color: var(--pink);
+    color: white;
+}

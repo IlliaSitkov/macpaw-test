@@ -1,0 +1,43 @@
+
+.action-log {
+    background-color: var(--grey-light);
+    /*border-radius: 10px;*/
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-block {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    color: var(--grey);
+}
+
+.time {
+    background-color: white;
+    padding: 4px 8px;
+    color: black;
+    border-radius: 5px;
+}
+
+span {
+    font-weight: 500;
+    color: black;
+}
+
+.smile svg {
+    fill: var(--green);
+}
+
+.sad svg {
+    fill: var(--yellow);
+}
+
+.favourite svg {
+    fill: var(--pink);
+}
+
+
+

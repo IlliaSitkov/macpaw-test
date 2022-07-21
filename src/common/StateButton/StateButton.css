@@ -1,0 +1,38 @@
+
+
+.state-btn {
+
+    border: none;
+    font-weight: 500;
+    color: var(--pink);
+    font-size: 12px;
+    background-color: var(--pink-light);
+    padding: 10px 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.state-btn svg {
+    fill: var(--pink);
+}
+
+
+.state-btn:disabled {
+    color: var(--grey);
+    background-color: var(--grey-light);
+}
+
+.state-btn:disabled svg {
+    fill: var(--grey);
+
+}
+
+
+.state-btn:not(:disabled):hover {
+    color: white;
+    background-color: var(--pink);
+}
+
+.state-btn:not(:disabled):hover svg {
+    fill: white;
+}

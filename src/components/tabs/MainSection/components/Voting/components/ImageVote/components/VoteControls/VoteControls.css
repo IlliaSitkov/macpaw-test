@@ -1,0 +1,65 @@
+.vote-controls {
+    background-color: white;
+    padding: 4px;
+    display: flex;
+    gap: 4px;
+}
+
+.vote-controls button {
+    min-height: 80px;
+    min-width: 80px;
+    border: none;
+}
+
+
+svg {
+    fill: white;
+}
+
+
+.like-vote {
+    border-radius: 20px 0 0 20px;
+    background-color: var(--green);
+}
+
+.like-vote:hover {
+    background-color: var(--green-3);
+}
+
+.like-vote:hover svg {
+    fill: var(--green);
+}
+
+
+
+.fav-vote {
+    background-color: var(--pink);
+}
+
+.fav-vote:hover {
+    background-color: var(--pink-3);
+}
+
+.fav-vote:hover svg {
+    fill: var(--pink);
+}
+
+
+
+.dislike-vote {
+    border-radius: 0 20px 20px 0;
+    background-color: var(--yellow);
+}
+
+.dislike-vote:hover {
+    background-color: var(--yellow-3);
+}
+
+.dislike-vote:hover svg {
+    fill: var(--yellow);
+}
+
+
+
+
+
