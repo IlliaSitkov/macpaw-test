@@ -1,0 +1,47 @@
+
+
+.breed-card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.breed-card-title-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.breed-card:hover .breed-card-title-container {
+    background-color: var(--pink-6);
+}
+
+.breed-card-title-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+
+.breed-card-title {
+    font-weight: 300;
+    text-align: center;
+    background-color: white;
+    min-width: 70%;
+    opacity: 0;
+    border: none;
+    font-size: 16px;
+    padding: 4px 6px;
+    color: var(--pink);
+    transition: opacity 0.5s ease;
+}
+
+.breed-card:hover .breed-card-title {
+    opacity: 1;
+}
+
+

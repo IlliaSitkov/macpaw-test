@@ -6,6 +6,7 @@ import { MainSection } from './components/tabs/MainSection/MainSection';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import { Voting } from './components/tabs/MainSection/components/Voting/Voting';
+import { Breeds } from './components/tabs/MainSection/components/Breeds/Breeds';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 						<Route path='tabs' element={<MainSection />}>
 							<Route index element={<Voting />} />
 							<Route exact path='voting' element={<Voting />} />
+							<Route exact path='breeds' element={<Breeds />} />
 						</Route>
 					</Route>
 					<Route path='*' element={<Navigate to='/' />} />

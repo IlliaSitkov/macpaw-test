@@ -1,0 +1,30 @@
+
+.radio-btn input {
+    display: none;
+}
+
+.radio-btn {
+    border: 2px solid var(--grey-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-light);
+    min-width: 40px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.radio-btn svg {
+    fill: var(--grey);
+}
+
+.radio-btn:hover svg, .radio-btn-checked svg {
+    fill: var(--pink);
+}
+
+.radio-btn:hover, .radio-btn-checked {
+    border-color: var(--pink-light);
+}
+
+

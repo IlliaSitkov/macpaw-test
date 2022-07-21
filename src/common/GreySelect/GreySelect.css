@@ -1,0 +1,7 @@
+
+.grey-select {
+    padding: 4px;
+    background-color: var(--grey-light);
+    border: 2px solid var(--grey-light);
+    color: var(--grey);
+}
