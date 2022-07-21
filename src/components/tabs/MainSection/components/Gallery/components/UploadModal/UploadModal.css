@@ -1,0 +1,70 @@
+
+.upload-modal-wrapper {
+    position:absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    padding: 30px;
+    background-color: var(--modal-overlay-grey);
+
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.upload-modal {
+    padding: 20px;
+    width: 50%;
+    background-color: var(--grey-light);
+}
+
+
+
+
+
+
+
+
+
+
+.close-btn-position {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.upload-modal-header {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.upload-modal-header + p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--grey);
+}
+
+.upload-modal-header + p a {
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.modal-text {
+    font-size: 20px;
+    text-align: center;
+    color: var(--grey);
+    margin-bottom: 20px;
+}
+
+
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+}
+

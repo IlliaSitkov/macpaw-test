@@ -8,6 +8,7 @@ import { store } from './store';
 import { Voting } from './components/tabs/MainSection/components/Voting/Voting';
 import { Breeds } from './components/tabs/MainSection/components/Breeds/Breeds';
 import { Breed } from './components/tabs/MainSection/components/Breed/Breed';
+import { Gallery } from './components/tabs/MainSection/components/Gallery/Gallery';
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 							<Route exact path='voting' element={<Voting />} />
 							<Route exact path='breeds' element={<Breeds />} />
 							<Route path='breeds/:breedId' element={<Breed />} />
+							<Route exact path='gallery' element={<Gallery />} />
 						</Route>
 					</Route>
 					<Route path='*' element={<Navigate to='/' />} />

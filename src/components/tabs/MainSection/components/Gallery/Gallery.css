@@ -1,0 +1,28 @@
+
+.gallery-filter {
+    border-radius: 20px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--grey-light);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery-tab-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.gallery-tab-group {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+
+
+
+
