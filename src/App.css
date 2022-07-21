@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+
+:root {
+    --pink: #FF868E;
+    --pink-6: rgba(255,134,142,0.6);
+    --pink-3: rgba(255,134,142,.3);
+    --pink-light: #FBE0DC;
+    --pink-light-5: rgba(251, 224, 220, 0.5);
+
+    --white-5: rgba(255,255,255,0.5);
+    --white-6: rgba(255,255,255,.6);
+
+    --grey: #8C8C8C;
+    --grey-light: #F8F8F7;
+
+    --blue: #B4B7FF;
+
+    --green: #97EAB9;
+    --green-3: rgba(151,234,185,.3);
+
+    --yellow: #FFD280;
+    --yellow-3: rgba(255,210,128,.3);
+
+    --modal-overlay-grey: rgba(29,29,29,.6);
+}
+
+
+body * {
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    background-color: #F8F8F7 !important;
+}
+
+
+
+.tab-header {
+    display: flex;
+    gap: 1em;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+.border-light-pink-hover:hover {
+    border-color: var(--pink-light);
+}
+
+.background-pink-hover:hover {
+    background-color: var(--pink);
+}
+
+.border-r-sm {
+    border-radius: 10px;
+}
+
+.border-r-lg {
+    border-radius: 20px;
+}
+
+.flex-gap-10 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.img-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
