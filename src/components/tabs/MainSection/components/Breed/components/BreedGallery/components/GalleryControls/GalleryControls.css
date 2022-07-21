@@ -1,0 +1,6 @@
+.gallery-controls {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+}
