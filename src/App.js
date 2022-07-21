@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import { Voting } from './components/tabs/MainSection/components/Voting/Voting';
 import { Breeds } from './components/tabs/MainSection/components/Breeds/Breeds';
+import { Breed } from './components/tabs/MainSection/components/Breed/Breed';
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 							<Route index element={<Voting />} />
 							<Route exact path='voting' element={<Voting />} />
 							<Route exact path='breeds' element={<Breeds />} />
+							<Route path='breeds/:breedId' element={<Breed />} />
 						</Route>
 					</Route>
 					<Route path='*' element={<Navigate to='/' />} />
