@@ -1,0 +1,28 @@
+
+.pink-btn {
+    background-color: var(--pink-light);
+}
+
+.white-btn {
+    background-color: white;
+}
+
+.small-btn {
+    min-width: 40px;
+    min-height: 40px;
+    border: none;
+}
+
+.small-btn svg {
+    fill: var(--pink);
+}
+
+.small-btn:hover svg {
+    fill: white;
+}
+
+.small-btn:hover {
+    background-color: var(--pink);
+}
+
+
