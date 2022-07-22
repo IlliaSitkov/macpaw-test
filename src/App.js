@@ -34,6 +34,11 @@ function App() {
 								path='likes'
 								element={<VotedImages tabName='likes' voteValue={1} />}
 							/>
+							<Route
+								exact
+								path='dislikes'
+								element={<VotedImages tabName='dislikes' voteValue={0} />}
+							/>
 						</Route>
 					</Route>
 					<Route path='*' element={<Navigate to='/' />} />
