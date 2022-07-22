@@ -11,6 +11,7 @@ import { Breed } from './components/tabs/MainSection/components/Breed/Breed';
 import { Gallery } from './components/tabs/MainSection/components/Gallery/Gallery';
 import { Favourites } from './components/tabs/MainSection/components/Favourites/Favourites';
 import { Search } from './components/tabs/MainSection/components/Search/Search';
+import { VotedImages } from './components/tabs/MainSection/components/VotedImages/VotedImages';
 
 function App() {
 	return (
@@ -28,6 +29,11 @@ function App() {
 							<Route exact path='gallery' element={<Gallery />} />
 							<Route exact path='favourites' element={<Favourites />} />
 							<Route exact path='search' element={<Search />} />
+							<Route
+								exact
+								path='likes'
+								element={<VotedImages tabName='likes' voteValue={1} />}
+							/>
 						</Route>
 					</Route>
 					<Route path='*' element={<Navigate to='/' />} />
