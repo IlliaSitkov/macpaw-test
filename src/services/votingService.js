@@ -62,7 +62,7 @@ export const getVotes = (limit, page) => {
 };
 
 export const getFavourites = (limit, page) => {
-	return fetch(`${favUrl}?limit=${limit}&page=${page}`, {
+	return fetch(`${favUrl}?limit=${limit}&page=${page}&order=Desc`, {
 		method: 'GET',
 		headers: {
 			'x-api-key': API_KEY,
