@@ -10,6 +10,7 @@ import { Breeds } from './components/tabs/MainSection/components/Breeds/Breeds';
 import { Breed } from './components/tabs/MainSection/components/Breed/Breed';
 import { Gallery } from './components/tabs/MainSection/components/Gallery/Gallery';
 import { Favourites } from './components/tabs/MainSection/components/Favourites/Favourites';
+import { Search } from './components/tabs/MainSection/components/Search/Search';
 
 function App() {
 	return (
@@ -26,6 +27,7 @@ function App() {
 							<Route path='breeds/:breedId' element={<Breed />} />
 							<Route exact path='gallery' element={<Gallery />} />
 							<Route exact path='favourites' element={<Favourites />} />
+							<Route exact path='search' element={<Search />} />
 						</Route>
 					</Route>
 					<Route path='*' element={<Navigate to='/' />} />
