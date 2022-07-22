@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Cat API front-end web application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a test task for the MacPaw Front-End Internship.\
+The application makes use of [Cat API](https://docs.thecatapi.com/) and allows users to search for cats' breeds,\
+enjoy funny images, vote, add to favourites and many more.
+***
+### The application has such features as:
+**Voting tab**
+- vote for images of cats
+- add images to favourites
+- look through votes history
 
-## Available Scripts
+**Breeds tab**
+- see all the breeds
+- filter breeds
+- get more details about the breed
 
-In the project directory, you can run:
+**Gallery tab**
+- filter cats' images
+- add/remove images to/from favourites
+- open **Upload modal**
 
-### `npm start`
+**Upload modal**
+- upload image of the cat on the server
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Favourites tab**
+- look through favourite images and history of favourite images
+- add/remove images to/from favourites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Likes tab**
+- look through the liked images
 
-### `npm test`
+**Dislikes tab**
+- look through the disliked images
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Search tab**
+- search for cats' breeds by search query
+***
 
-### `npm run build`
+# Technology stack
+The app developed using:
+- **HTML5, CSS3**
+- **JavaScript** as a programming language
+- **ReactJS** as a front-end framework
+- **Redux Store** for storing the state of the app
+- **Redux Thunk** as a middleware for asynchronous Redux
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+***
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#How to get started with the app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In order to use the app, clone the repository or download the .zip archive.\
+Open the project in the IDE and run the following command in the root directory\
+of the project to install all the necessary dependencies:
 
-### `npm run eject`
+###`npm install`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After doing this wait until the downloading process finishes and start the application with the command:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###`npm start`
+###NB
+_The application supports only desktop screens\
+and may look strange on smaller screens._
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#Enjoy!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
