@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 import './Main.css';
 import { MenuCard } from './components/MenuCard/MenuCard';
@@ -8,7 +8,9 @@ export const Main = () => {
 	return (
 		<div className='two-cols main'>
 			<section className='menu'>
-				<img draggable={false} src='/assets/images/img.png' alt='' />
+				<Link to='/'>
+					<img draggable={false} src='/assets/images/img.png' alt='' />
+				</Link>
 				<h1>Hi intern!</h1>
 				<p>Welcome to MI 2022 Front-end test</p>
 				<p>Lets start using The Cat API</p>
