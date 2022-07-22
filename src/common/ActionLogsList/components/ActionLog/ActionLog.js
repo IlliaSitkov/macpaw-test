@@ -1,8 +1,8 @@
 import React from 'react';
 import './ActionLog.css';
-import { Smile } from '../../../../../../../common/icons/Smile';
-import { Sad } from '../../../../../../../common/icons/Sad';
-import { HeartOutline } from '../../../../../../../common/icons/HeartOutline';
+import { Smile } from '../../../icons/Smile';
+import { Sad } from '../../../icons/Sad';
+import { HeartOutline } from '../../../icons/HeartOutline';
 
 export const ActionLog = ({ log }) => {
 	const time = new Date(log.created_at)

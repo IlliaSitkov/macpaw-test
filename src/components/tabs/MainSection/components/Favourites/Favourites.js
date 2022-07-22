@@ -11,6 +11,7 @@ import { getLoading } from '../../../../../store/selectors';
 import { PaginationControls } from '../../../../../common/PaginationControls/PaginationControls';
 import { LoadingSpinner } from '../../../../../common/LoadingSpinner/LoadingSpinner';
 import { Message } from '../../../../../common/Message/Message';
+import { ActionLogsList } from '../../../../../common/ActionLogsList/ActionLogsList';
 
 export const Favourites = () => {
 	const [favourites, setFavourites] = useState([]);
@@ -65,6 +66,9 @@ export const Favourites = () => {
 							<GalleryCard imageId={d.image_id} imageUrl={d.url} />
 						)}
 					/>
+					<div style={{ marginTop: '40px' }}>
+						<ActionLogsList actionLogs={favourites} />
+					</div>
 					<PaginationControls
 						limit={limit}
 						page={page}

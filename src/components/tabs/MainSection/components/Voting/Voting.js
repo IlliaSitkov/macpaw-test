@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { WorkPane } from '../../../../../common/WorkPane/WorkPane';
 import { BackButton } from '../../../../../common/BackButton/BackButton';
 import { TabLabel } from '../../../../../common/TabLabel/TabLabel';
-import './Voting.css';
 import { ImageVote } from './components/ImageVote/ImageVote';
-import { ActionLog } from './components/ActionLog/ActionLog';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchActionLogs } from '../../../../../store/actionLogs/thunk';
 import {
@@ -13,6 +11,7 @@ import {
 } from '../../../../../store/selectors';
 import { PaginationControls } from '../../../../../common/PaginationControls/PaginationControls';
 import { fetchAllFavourites } from '../../../../../store/favourites/thunk';
+import { ActionLogsList } from '../../../../../common/ActionLogsList/ActionLogsList';
 
 export const Voting = () => {
 	const [page, setPage] = useState(0);
@@ -43,13 +42,7 @@ export const Voting = () => {
 				<TabLabel label='voting' active={true} />
 			</div>
 			<ImageVote reloadLogs={loadActionLogs} />
-			<div className='logs-list'>
-				{actionLogs.map((a) => (
-					<div key={a.id}>
-						<ActionLog log={a} />
-					</div>
-				))}
-			</div>
+			<ActionLogsList actionLogs={actionLogs} />
 			<PaginationControls
 				limit={limit}
 				page={page}
