@@ -9,6 +9,7 @@ import { Voting } from './components/tabs/MainSection/components/Voting/Voting';
 import { Breeds } from './components/tabs/MainSection/components/Breeds/Breeds';
 import { Breed } from './components/tabs/MainSection/components/Breed/Breed';
 import { Gallery } from './components/tabs/MainSection/components/Gallery/Gallery';
+import { Favourites } from './components/tabs/MainSection/components/Favourites/Favourites';
 
 function App() {
 	return (
@@ -24,6 +25,7 @@ function App() {
 							<Route exact path='breeds' element={<Breeds />} />
 							<Route path='breeds/:breedId' element={<Breed />} />
 							<Route exact path='gallery' element={<Gallery />} />
+							<Route exact path='favourites' element={<Favourites />} />
 						</Route>
 					</Route>
 					<Route path='*' element={<Navigate to='/' />} />
