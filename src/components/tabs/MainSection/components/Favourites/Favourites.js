@@ -49,34 +49,35 @@ export const Favourites = () => {
 
 	return (
 		<WorkPane white={true}>
-			<div className='tab-header'>
-				<BackButton />
-				<TabLabel label='favourites' active={true} />
-			</div>
-			<LoadingSpinner loadingCondition={loading} />
-			<Message
-				message='No item found'
-				showCondition={!loading && favourites.length <= 0}
-			/>
-			{!loading && favourites.length > 0 && (
-				<>
-					<ImageGallery
-						data={favourites}
-						dataToComponentFn={(d) => (
-							<GalleryCard imageId={d.image_id} imageUrl={d.url} />
-						)}
-					/>
-					<div style={{ marginTop: '40px' }}>
-						<ActionLogsList actionLogs={favourites} />
-					</div>
-					<PaginationControls
-						limit={limit}
-						page={page}
-						pageSetter={setPage}
-						paginationCount={paginationCount}
-					/>
-				</>
-			)}
+			<PaginationControls
+				limit={limit}
+				page={page}
+				pageSetter={setPage}
+				paginationCount={paginationCount}
+			>
+				<div className='tab-header'>
+					<BackButton />
+					<TabLabel label='favourites' active={true} />
+				</div>
+				<LoadingSpinner loadingCondition={loading} />
+				<Message
+					message='No item found'
+					showCondition={!loading && favourites.length <= 0}
+				/>
+				{!loading && favourites.length > 0 && (
+					<>
+						<ImageGallery
+							data={favourites}
+							dataToComponentFn={(d) => (
+								<GalleryCard imageId={d.image_id} imageUrl={d.url} />
+							)}
+						/>
+						<div style={{ marginTop: '40px' }}>
+							<ActionLogsList actionLogs={favourites} />
+						</div>
+					</>
+				)}
+			</PaginationControls>
 		</WorkPane>
 	);
 };

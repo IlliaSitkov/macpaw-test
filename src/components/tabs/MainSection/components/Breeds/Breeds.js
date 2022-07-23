@@ -76,60 +76,59 @@ export const Breeds = () => {
 
 	return (
 		<WorkPane white={true}>
-			<div className='tab-header'>
-				<BackButton />
-				<TabLabel label='breeds' active={true} />
-				<GreySelect
-					id='breedId'
-					optionNameFn={(d) => d.name}
-					optionValueFn={(d) => d.name}
-					value={breedName}
-					onChange={(event) => {
-						setPage(0);
-						onChangeHandler(setBreedName)(event);
-					}}
-					width='100%'
-					data={breedNames}
-				>
-					<option key={-1} value=''>
-						All breeds
-					</option>
-				</GreySelect>
-				<GreySelect
-					onChange={(event) => {
-						setPage(0);
-						onChangeHandler(setLimit)(event);
-					}}
-					value={limit}
-					data={limitsData}
-					id='breedsLimit'
-					optionValueFn={(d) => d.limit}
-					optionNameFn={(d) => 'Limit: ' + d.limit}
-				/>
-				<SortButtonGroup
-					currentValue={sortingOrder}
-					name='sortingOrder'
-					onChange={(event) => {
-						setPage(0);
-						onChangeHandler(setSortingOrder)(event);
-					}}
-				/>
-			</div>
-			<LoadingSpinner loadingCondition={loading} />
-			{!loading && (
-				<>
+			<PaginationControls
+				limit={limit}
+				page={page}
+				pageSetter={setPage}
+				paginationCount={paginationCount}
+			>
+				<div className='tab-header'>
+					<BackButton />
+					<TabLabel label='breeds' active={true} />
+					<GreySelect
+						id='breedId'
+						optionNameFn={(d) => d.name}
+						optionValueFn={(d) => d.name}
+						value={breedName}
+						onChange={(event) => {
+							setPage(0);
+							onChangeHandler(setBreedName)(event);
+						}}
+						width='100%'
+						data={breedNames}
+					>
+						<option key={-1} value=''>
+							All breeds
+						</option>
+					</GreySelect>
+					<GreySelect
+						onChange={(event) => {
+							setPage(0);
+							onChangeHandler(setLimit)(event);
+						}}
+						value={limit}
+						data={limitsData}
+						id='breedsLimit'
+						optionValueFn={(d) => d.limit}
+						optionNameFn={(d) => 'Limit: ' + d.limit}
+					/>
+					<SortButtonGroup
+						currentValue={sortingOrder}
+						name='sortingOrder'
+						onChange={(event) => {
+							setPage(0);
+							onChangeHandler(setSortingOrder)(event);
+						}}
+					/>
+				</div>
+				<LoadingSpinner loadingCondition={loading} />
+				{!loading && (
 					<ImageGallery
 						data={breeds}
 						dataToComponentFn={(d) => <BreedCard breed={d} />}
 					/>
-					<PaginationControls
-						limit={limit}
-						page={page}
-						pageSetter={setPage}
-						paginationCount={paginationCount}
-					/>
-				</>
-			)}
+				)}
+			</PaginationControls>
 		</WorkPane>
 	);
 };

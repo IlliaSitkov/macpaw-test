@@ -27,23 +27,25 @@ export const VotedImages = ({ voteValue, tabName }) => {
 
 	return (
 		<WorkPane white={true}>
-			<div className='tab-header'>
-				<BackButton />
-				<TabLabel label={tabName} active={true} />
-			</div>
-			<LoadingSpinner loadingCondition={loading} />
-			<Message
-				message='No item found'
-				showCondition={!loading && votes.length <= 0}
-			/>
-			{!loading && (
-				<ImageGallery
-					data={votes}
-					dataToComponentFn={(d) => (
-						<SimpleCard imgUrl={d.url} alt={d.image_id} />
-					)}
+			<div className='pane-content'>
+				<div className='tab-header'>
+					<BackButton />
+					<TabLabel label={tabName} active={true} />
+				</div>
+				<LoadingSpinner loadingCondition={loading} />
+				<Message
+					message='No item found'
+					showCondition={!loading && votes.length <= 0}
 				/>
-			)}
+				{!loading && (
+					<ImageGallery
+						data={votes}
+						dataToComponentFn={(d) => (
+							<SimpleCard imgUrl={d.url} alt={d.image_id} />
+						)}
+					/>
+				)}
+			</div>
 		</WorkPane>
 	);
 };

@@ -28,26 +28,28 @@ export const Search = () => {
 
 	return (
 		<WorkPane white={true}>
-			<div className='tab-header'>
-				<BackButton />
-				<TabLabel label='search' active={true} />
+			<div className='pane-content'>
+				<div className='tab-header'>
+					<BackButton />
+					<TabLabel label='search' active={true} />
+				</div>
+				<div className='query'>
+					Search results for: <span>{searchParams.get('q')}</span>
+				</div>
+				<LoadingSpinner loadingCondition={loading} />
+				<Message
+					message='No item found'
+					showCondition={!loading && breeds.length <= 0}
+				/>
+				{!loading && (
+					<>
+						<ImageGallery
+							data={breeds}
+							dataToComponentFn={(d) => <BreedCard breed={d} />}
+						/>
+					</>
+				)}
 			</div>
-			<div className='query'>
-				Search results for: <span>{searchParams.get('q')}</span>
-			</div>
-			<LoadingSpinner loadingCondition={loading} />
-			<Message
-				message='No item found'
-				showCondition={!loading && breeds.length <= 0}
-			/>
-			{!loading && (
-				<>
-					<ImageGallery
-						data={breeds}
-						dataToComponentFn={(d) => <BreedCard breed={d} />}
-					/>
-				</>
-			)}
 		</WorkPane>
 	);
 };

@@ -6,8 +6,10 @@ import './MainImage.css';
 export const MainImage = () => {
 	return (
 		<WorkPane>
-			<div className='main-image'>
-				<img src='assets/images/main_image.png' alt='' />
+			<div className='pane-content'>
+				<div className='main-image'>
+					<img src='assets/images/main_image.png' alt='' />
+				</div>
 			</div>
 		</WorkPane>
 	);

@@ -6,6 +6,13 @@
     justify-content: center;
 }
 
+.pagination-controls-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
 
 
 

@@ -27,13 +27,15 @@ export const Breed = () => {
 
 	return (
 		<WorkPane white={true}>
-			<div className='tab-header'>
-				<BackButton />
-				<TabLabel label='breeds' active={false} />
-				<TabLabel label={params.breedId} active={true} />
+			<div className='pane-content'>
+				<div className='tab-header'>
+					<BackButton />
+					<TabLabel label='breeds' active={false} />
+					<TabLabel label={params.breedId} active={true} />
+				</div>
+				<BreedGallery breedId={params.breedId} imageQuantity={5} />
+				{breed && <BreedInfo breed={breed} />}
 			</div>
-			<BreedGallery breedId={params.breedId} imageQuantity={5} />
-			{breed && <BreedInfo breed={breed} />}
 		</WorkPane>
 	);
 };

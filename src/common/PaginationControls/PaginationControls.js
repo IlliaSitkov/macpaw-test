@@ -9,25 +9,28 @@ export const PaginationControls = ({
 	page,
 	pageSetter,
 	paginationCount,
+	children,
 }) => {
-	console.log('pagination controls page: ' + page);
 	return (
-		<div className='pagination-controls'>
-			<StateButton
-				onClick={() => pageSetter(page - 1)}
-				disabled={page === 0}
-				iconLeft={true}
-				label='Prev'
-			>
-				<ArrowLeftSmall />
-			</StateButton>
-			<StateButton
-				onClick={() => pageSetter(page + 1)}
-				disabled={limit * (page + 1) >= paginationCount}
-				label='Next'
-			>
-				<ArrowRightSmall />
-			</StateButton>
+		<div className='pagination-controls-wrapper'>
+			<div>{children}</div>
+			<div className='pagination-controls'>
+				<StateButton
+					onClick={() => pageSetter(page - 1)}
+					disabled={page === 0}
+					iconLeft={true}
+					label='Prev'
+				>
+					<ArrowLeftSmall />
+				</StateButton>
+				<StateButton
+					onClick={() => pageSetter(page + 1)}
+					disabled={limit * (page + 1) >= paginationCount}
+					label='Next'
+				>
+					<ArrowRightSmall />
+				</StateButton>
+			</div>
 		</div>
 	);
 };

@@ -37,18 +37,19 @@ export const Voting = () => {
 
 	return (
 		<WorkPane white={true}>
-			<div className='tab-header'>
-				<BackButton />
-				<TabLabel label='voting' active={true} />
-			</div>
-			<ImageVote reloadLogs={loadActionLogs} />
-			<ActionLogsList actionLogs={actionLogs} />
 			<PaginationControls
 				limit={limit}
 				page={page}
 				pageSetter={setPage}
 				paginationCount={paginationCount}
-			/>
+			>
+				<div className='tab-header'>
+					<BackButton />
+					<TabLabel label='voting' active={true} />
+				</div>
+				<ImageVote reloadLogs={loadActionLogs} />
+				<ActionLogsList actionLogs={actionLogs} />
+			</PaginationControls>
 		</WorkPane>
 	);
 };

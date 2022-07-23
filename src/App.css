@@ -76,5 +76,9 @@ body {
     justify-content: center;
 }
 
+.pane-content {
+    width: 100%;
+}
+
 
 

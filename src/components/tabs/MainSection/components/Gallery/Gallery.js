@@ -101,53 +101,52 @@ export const Gallery = () => {
 
 	return (
 		<WorkPane white={true}>
-			<UploadModal show={showModal} toggle={toggleModal} />
-			<div className='gallery-tab-header'>
-				<div className='gallery-tab-group'>
-					<BackButton />
-					<TabLabel label='gallery' active={true} />
-				</div>
-				<StateButton
-					label='upload'
-					disabled={false}
-					iconLeft={true}
-					onClick={toggleModal}
-				>
-					<Upload />
-				</StateButton>
-			</div>
-			<GalleryFilter
+			<PaginationControls
+				paginationCount={paginationCount}
+				page={filter.page}
+				pageSetter={setPage}
 				limit={limit}
-				limitSetter={setLimit}
-				breedId={breedId}
-				breedIdSetter={setBreedId}
-				order={order}
-				orderSetter={setOrder}
-				type={type}
-				typeSetter={setType}
-				reloadImagesFn={reloadImages}
-			/>
-			<LoadingSpinner loadingCondition={loading} />
-			<Message
-				showCondition={!loading && images.length <= 0}
-				message='No item found'
-			/>
-			{!loading && images.length > 0 && (
-				<>
+			>
+				<UploadModal show={showModal} toggle={toggleModal} />
+				<div className='gallery-tab-header'>
+					<div className='gallery-tab-group'>
+						<BackButton />
+						<TabLabel label='gallery' active={true} />
+					</div>
+					<StateButton
+						label='upload'
+						disabled={false}
+						iconLeft={true}
+						onClick={toggleModal}
+					>
+						<Upload />
+					</StateButton>
+				</div>
+				<GalleryFilter
+					limit={limit}
+					limitSetter={setLimit}
+					breedId={breedId}
+					breedIdSetter={setBreedId}
+					order={order}
+					orderSetter={setOrder}
+					type={type}
+					typeSetter={setType}
+					reloadImagesFn={reloadImages}
+				/>
+				<LoadingSpinner loadingCondition={loading} />
+				<Message
+					showCondition={!loading && images.length <= 0}
+					message='No item found'
+				/>
+				{!loading && images.length > 0 && (
 					<ImageGallery
 						data={images}
 						dataToComponentFn={(d) => (
 							<GalleryCard imageId={d.id} imageUrl={d.url} />
 						)}
 					/>
-					<PaginationControls
-						paginationCount={paginationCount}
-						page={filter.page}
-						pageSetter={setPage}
-						limit={limit}
-					/>
-				</>
-			)}
+				)}
+			</PaginationControls>
 		</WorkPane>
 	);
 };

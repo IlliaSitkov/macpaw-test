@@ -1,5 +1,8 @@
 .work-pane {
     padding: 20px;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
 }
 
 .white {
