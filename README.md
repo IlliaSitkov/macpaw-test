@@ -4,6 +4,8 @@ This project is a test task for the MacPaw Front-End Internship.\
 The application makes use of [Cat API](https://docs.thecatapi.com/) and allows users to search for cats' breeds,\
 enjoy funny images, vote, add to favourites and many more.
 
+### You can quickly access the application by this [link](https://cats-api-app.netlify.app/)
+
 ### The application has such features as:
 **Voting tab**
 - vote for images of cats
@@ -46,7 +48,7 @@ The app developed using:
 
 
 # How to get started with the app
-
+### You can quickly access the application by this [link](https://cats-api-app.netlify.app/)
 In order to use the app, clone the repository or download the .zip archive.\
 Open the project in the IDE and run the following command in the root directory\
 of the project to install all the necessary dependencies:
