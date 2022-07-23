@@ -3,7 +3,7 @@
 This project is a test task for the MacPaw Front-End Internship.\
 The application makes use of [Cat API](https://docs.thecatapi.com/) and allows users to search for cats' breeds,\
 enjoy funny images, vote, add to favourites and many more.
-***
+
 ### The application has such features as:
 **Voting tab**
 - vote for images of cats
@@ -35,7 +35,6 @@ enjoy funny images, vote, add to favourites and many more.
 
 **Search tab**
 - search for cats' breeds by search query
-***
 
 # Technology stack
 The app developed using:
@@ -45,24 +44,24 @@ The app developed using:
 - **Redux Store** for storing the state of the app
 - **Redux Thunk** as a middleware for asynchronous Redux
 
-***
 
-#How to get started with the app
+# How to get started with the app
 
 In order to use the app, clone the repository or download the .zip archive.\
 Open the project in the IDE and run the following command in the root directory\
 of the project to install all the necessary dependencies:
 
-###`npm install`
+### `npm install`
 
 After doing this wait until the downloading process finishes and start the application with the command:
 
-###`npm start`
-###NB
+### `npm start`
+
+### NB
 _The application supports only desktop screens\
 and may look strange on smaller screens._
 
-#Enjoy!
+# Enjoy!
 
 
 
